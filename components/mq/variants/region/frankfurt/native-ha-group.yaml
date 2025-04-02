@@ -16,7 +16,7 @@ spec:
                 - tls.crt
         remotes: 
           - addresses:  
-            - native-ha-qm-crr-ibm-mq-nhacrr-cp4i..apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com:443
+            - native-ha-qm-crr-ibm-mq-nhacrr-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com:443
             name: madrid
             trust: 
               - secret:
