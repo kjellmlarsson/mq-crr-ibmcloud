@@ -20,7 +20,7 @@ spec:
             name: madrid
             trust: 
               - secret:
-                  secretName: default-cert-copy   
+                  secretName: letsencrypt-chain   
                   items:
                   - ca.crt       
                 

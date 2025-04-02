@@ -20,6 +20,6 @@ spec:
             name: frankfurt
             trust: 
               - secret:
-                  secretName: default-cert-copy  
+                  secretName: letsencrypt-chain  
                   items:
                   - ca.crt                
