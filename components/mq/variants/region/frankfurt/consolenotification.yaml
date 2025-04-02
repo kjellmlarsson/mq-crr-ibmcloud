@@ -1,9 +1,9 @@
 apiVersion: console.openshift.io/v1
 kind: ConsoleNotification
 metadata:
-  name: us-west
+  name: us-east
 spec:
-  text: This is the cluster in us-west.
+  text: This is the cluster in Frankfurt.
   location: BannerTop 
   color: '#fff'
-  backgroundColor: '#ce8800'
+  backgroundColor: '#0088ce'

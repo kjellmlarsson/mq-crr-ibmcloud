@@ -22,7 +22,7 @@ spec:
     spec:
       project: cp4i-operands
       source:
-        path: 'envs/azure/us-east/{{name}}/'
+        path: 'envs/odf/frankfurt/{{name}}/'
       destination:
         namespace: '{{namespace}}'
         server: https://kubernetes.default.svc

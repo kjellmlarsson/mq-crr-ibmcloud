@@ -7,7 +7,7 @@ spec:
     availability:
       nativeHAGroups:
         local:
-          name: us-east
+          name: frankfurt
           tls:
             key:
               secretName: default-cert-copy
@@ -16,8 +16,8 @@ spec:
                 - tls.crt
         remotes: 
           - addresses:  
-            - native-ha-qm-crr-ibm-mq-nhacrr-cp4i.apps.avly7wz7.westus.aroapp.io:443
-            name: us-west
+            - native-ha-qm-crr-ibm-mq-nhacrr-cp4i..apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com:443
+            name: madrid
             trust: 
               - secret:
                   secretName: default-cert-copy   

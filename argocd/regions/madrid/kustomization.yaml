@@ -6,7 +6,7 @@ resources:
   - ../../operators
   - ../../common
 
-  - ../../operands/us-west
+  #- ../../operands/madrid
  
 patches:
 - target:
@@ -16,7 +16,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/louhaz/mq-crr-aro.git
+      value: https://github.com/kjellmlarsson/mq-crr-ibmcloud.git
     - op: add
       path: /spec/source/targetRevision
       value: HEAD
@@ -26,7 +26,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/template/spec/source/repoURL
-      value: https://github.com/louhaz/mq-crr-aro.git
+      value: https://github.com/kjellmlarsson/mq-crr-ibmcloud.git
     - op: add
       path: /spec/template/spec/source/targetRevision
       value: HEAD

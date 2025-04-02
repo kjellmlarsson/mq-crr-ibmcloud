@@ -9,9 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ./argocd/regions/us-east
+    path: ./argocd/regions/madrid
     targetRevision: HEAD
-    repoURL: https://github.com/louhaz/mq-crr-aro.git
+    repoURL: https://github.com/kjellmlarsson/mq-crr-ibmcloud.git
   syncPolicy:
     automated:
       prune: true
