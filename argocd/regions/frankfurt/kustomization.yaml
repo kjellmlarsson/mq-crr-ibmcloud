@@ -6,7 +6,7 @@ resources:
   - ../../operators
   - ../../common
 
-  #- ../../operands/frankfurt
+  - ../../operands/frankfurt
  
 patches:
 - target:

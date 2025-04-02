@@ -6,7 +6,7 @@ resources:
   - ../../operators
   - ../../common
 
-  #- ../../operands/madrid
+  - ../../operands/madrid
  
 patches:
 - target:
