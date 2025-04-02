@@ -14,7 +14,6 @@ spec:
               items:
                 - tls.key
                 - tls.crt
-                - ca.crt
         remotes: 
           - addresses:
             - native-ha-qm-crr-ibm-mq-nhacrr-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com:443  
