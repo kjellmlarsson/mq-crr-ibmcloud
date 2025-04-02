@@ -22,6 +22,4 @@ spec:
               - secret:
                   secretName: default-cert-copy  
                   items:
-                  - ca.crt
-                  - tls.crt    
-                
+                  - ca.crt                
