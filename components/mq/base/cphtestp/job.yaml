@@ -20,7 +20,7 @@ spec:
         - name: MQ_QMGR_HOSTNAME
           value: native-ha-qm-crr-ibm-mq.cp4i.svc.cluster.local
         - name: MQ_QMGR_PORT
-          value: 1414
+          value: "1414"
         #- name: MQ_USERID
         #  value: 
         #- name: MQ_PASSWORD
