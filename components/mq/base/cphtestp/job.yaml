@@ -18,7 +18,7 @@ spec:
         - name: LICENSE
           value: accept
         - name: MQ_QMGR_HOSTNAME
-          value: native-ha-qm-crr-ibm-mq.cp4i.svc.cluster.local
+          value: "172.30.26.108"
         - name: MQ_QMGR_PORT
           value: "1414"
         #- name: MQ_USERID
