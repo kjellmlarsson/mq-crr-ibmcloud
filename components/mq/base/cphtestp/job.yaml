@@ -11,7 +11,7 @@ spec:
       labels:
         run: cphtestp
       annotations:
-        k8s.v1.cni.cncf.io/networks: mqns/tengig
+        k8s.v1.cni.cncf.io/networks: cp4i/tengig
     spec:
       containers:
       - env:
