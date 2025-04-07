@@ -61,6 +61,6 @@ spec:
       volumes:
       - name: cphdata
         emptyDir: {}
-      nodeSelector: 
-        kubernetes.io/hostname : worker5.<hostname>
+      #nodeSelector: 
+      # kubernetes.io/hostname : worker5.<hostname>
         
