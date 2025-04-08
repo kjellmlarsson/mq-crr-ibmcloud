@@ -6,7 +6,7 @@ resources:
  
   # Resources for QM using a self signed server certificate.
   - native-ha-qm-crr
-  - cphtestp/job.yaml
+  #- cphtestp/job.yaml
 
   #- singleinstance-qm
 
