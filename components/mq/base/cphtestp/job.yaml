@@ -21,10 +21,10 @@ spec:
           value: native-ha-qm-crr-ibm-mq.cp4i.svc.cluster.local
         - name: MQ_QMGR_PORT
           value: "1414"
-        #- name: MQ_USERID
-        #  value: 
-        #- name: MQ_PASSWORD
-        #  value: 
+        - name: MQ_USERID
+          value: 
+        - name: MQ_PASSWORD
+          value: 
         - name: MQ_QMGR_CHANNEL
           value: KAFKA
         - name: MQ_RESPONDER_THREADS
