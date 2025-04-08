@@ -47,13 +47,16 @@ spec:
         secretName: mq-nativeha-internal-tls-secret
     storage:
       queueManager:
+        size: 10Gi
         class: PATCHED_BY_KUSTOMIZE
         deleteClaim: true
       persistedData:
+        size: 10Gi
         enabled: false
         class: PATCHED_BY_KUSTOMIZE
         deleteClaim: true
       recoveryLogs:
+        size: 10Gi
         enabled: false
         class: PATCHED_BY_KUSTOMIZE
         deleteClaim: true

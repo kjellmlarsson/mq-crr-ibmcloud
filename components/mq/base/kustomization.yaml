@@ -5,7 +5,7 @@ resources:
   #- metrics
  
   # Resources for QM using a self signed server certificate.
-  #- native-ha-qm-crr
+  - native-ha-qm-crr
   - cphtestp/job.yaml
 
   #- singleinstance-qm
