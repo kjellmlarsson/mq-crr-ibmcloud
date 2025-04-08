@@ -18,16 +18,18 @@ spec:
           value: native-ha-qm-crr-ibm-mq.cp4i.svc.cluster.local
         - name: MQ_QMGR_PORT
           value: "1414"
+        - name: MQ_QMGR_CHANNEL
+          value: KAFKA
         - name: MQ_USERID
           value: 
         - name: MQ_PASSWORD
           value: 
-        - name: MQ_QMGR_CHANNEL
-          value: KAFKA
         - name: MQ_RESPONDER_THREADS
-          value: "5"
+          value: "8"
         - name: MQ_NON_PERSISTENT
           value: "0"
+        - name: MQ_MSGSIZE
+          value: "2048"
         - name: MQ_QMGR_NAME
           value: NATIVEHAQM
         - name: MQ_DATA
@@ -42,8 +44,8 @@ spec:
         name: cphtestp
         resources: 
           requests:
-            memory: "4Gi"
-            cpu: "2"
+            memory: "12Gi"
+            cpu: "8"
           limits:
             memory: "16Gi"
             cpu: "32"
