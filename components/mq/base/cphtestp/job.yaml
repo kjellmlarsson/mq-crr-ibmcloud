@@ -26,7 +26,7 @@ spec:
         - name: MQ_PASSWORD
           value: 
         - name: MQ_QMGR_CHANNEL
-          value: SYSTEM.DEF.SVRCONN
+          value: METRICS
         - name: MQ_RESPONDER_THREADS
           value: "500"
         - name: MQ_NON_PERSISTENT
