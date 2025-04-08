@@ -25,7 +25,7 @@ spec:
         - name: MQ_PASSWORD
           value: 
         - name: MQ_RESPONDER_THREADS
-          value: "400"
+          value: "500"
         - name: MQ_NON_PERSISTENT
           value: "0"
         - name: MQ_MSGSIZE
