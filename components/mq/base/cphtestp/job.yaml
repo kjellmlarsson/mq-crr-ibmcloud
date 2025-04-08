@@ -28,8 +28,8 @@ spec:
           value: "400"
         - name: MQ_NON_PERSISTENT
           value: "0"
-        #- name: MQ_MSGSIZE
-        #  value: "2048"
+        - name: MQ_MSGSIZE
+          value: "2048"
         - name: MQ_QMGR_NAME
           value: NATIVEHAQM
         - name: MQ_DATA
