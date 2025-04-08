@@ -59,11 +59,11 @@ spec:
         deleteClaim: true
     resources:
       limits:
-        memory: 2Gi
-        cpu: 500m
+        memory: 10Gi
+        cpu: 6
       requests:
-        cpu: 500m
-        memory: 1Gi
+        cpu: 4
+        memory: 8Gi
     mqsc:
       - configMap:
           name: native-ha-qm-configmap
