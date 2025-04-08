@@ -2,9 +2,6 @@ DEFINE QLOCAL('QUEUE1') DEFPSIST(YES) REPLACE
 DEFINE QLOCAL('QUEUE2') DEFPSIST(YES) REPLACE
 DEFINE QLOCAL('QUEUE3') DEFPSIST(YES) REPLACE
 
-DEFINE QLOCAL('REQUEST') DEFPSIST(YES) REPLACE
-DEFINE QLOCAL('REPLY') DEFPSIST(YES) REPLACE
-
 DEFINE QLOCAL('ORDER') DEFPSIST(YES) REPLACE 
 DEFINE QLOCAL('ORDERLOG') REPLACE
 ALTER QLOCAL('ORDER') STRMQOS(BESTEF) STREAMQ('ORDERLOG')
@@ -17,3 +14,49 @@ SET CHLAUTH(METRICS) TYPE(BLOCKUSER) USERLIST('nobody') ACTION(ADD)
 
 DEFINE CHANNEL(KAFKA) CHLTYPE(SVRCONN) TRPTYPE(TCP) SSLCAUTH(OPTIONAL) REPLACE
 SET CHLAUTH(KAFKA) TYPE(BLOCKUSER) USERLIST('nobody') ACTION(ADD)
+
+define qlocal(queue) DEFPSIST(YES) REPLACE
+define qlocal(request) DEFPSIST(YES) REPLACE
+define qlocal(reply) DEFPSIST(YES) REPLACE
+
+define qlocal(request1) DEFPSIST(YES) REPLACE
+define qlocal(request2) DEFPSIST(YES) REPLACE
+define qlocal(request3) DEFPSIST(YES) REPLACE
+define qlocal(request4) DEFPSIST(YES) REPLACE
+define qlocal(request5) DEFPSIST(YES) REPLACE
+define qlocal(request6) DEFPSIST(YES) REPLACE
+define qlocal(request7) DEFPSIST(YES) REPLACE
+define qlocal(request8) DEFPSIST(YES) REPLACE
+define qlocal(request9) DEFPSIST(YES) REPLACE
+define qlocal(request10) DEFPSIST(YES) REPLACE
+define qlocal(request11) DEFPSIST(YES) REPLACE
+define qlocal(request12) DEFPSIST(YES) REPLACE
+define qlocal(request13) DEFPSIST(YES) REPLACE
+define qlocal(request14) DEFPSIST(YES) REPLACE
+define qlocal(request15) DEFPSIST(YES) REPLACE
+define qlocal(request16) DEFPSIST(YES) REPLACE
+define qlocal(request17) DEFPSIST(YES) REPLACE
+define qlocal(request18) DEFPSIST(YES) REPLACE
+define qlocal(request19) DEFPSIST(YES) REPLACE
+define qlocal(request20) DEFPSIST(YES) REPLACE
+
+define qlocal(reply1) DEFPSIST(YES) REPLACE
+define qlocal(reply2) DEFPSIST(YES) REPLACE
+define qlocal(reply3) DEFPSIST(YES) REPLACE
+define qlocal(reply4) DEFPSIST(YES) REPLACE
+define qlocal(reply5) DEFPSIST(YES) REPLACE
+define qlocal(reply6) DEFPSIST(YES) REPLACE
+define qlocal(reply7) DEFPSIST(YES) REPLACE
+define qlocal(reply8) DEFPSIST(YES) REPLACE
+define qlocal(reply9) DEFPSIST(YES) REPLACE
+define qlocal(reply10) DEFPSIST(YES) REPLACE
+define qlocal(reply11) DEFPSIST(YES) REPLACE
+define qlocal(reply12) DEFPSIST(YES) REPLACE
+define qlocal(reply13) DEFPSIST(YES) REPLACE
+define qlocal(reply14) DEFPSIST(YES) REPLACE
+define qlocal(reply15) DEFPSIST(YES) REPLACE
+define qlocal(reply16) DEFPSIST(YES) REPLACE
+define qlocal(reply17) DEFPSIST(YES) REPLACE
+define qlocal(reply18) DEFPSIST(YES) REPLACE
+define qlocal(reply19) DEFPSIST(YES) REPLACE
+define qlocal(reply20) DEFPSIST(YES) REPLACE
