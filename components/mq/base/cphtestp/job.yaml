@@ -25,11 +25,11 @@ spec:
         - name: MQ_PASSWORD
           value: 
         - name: MQ_RESPONDER_THREADS
-          value: "8"
+          value: "200"
         - name: MQ_NON_PERSISTENT
           value: "0"
-        - name: MQ_MSGSIZE
-          value: "2048"
+        #- name: MQ_MSGSIZE
+        #  value: "2048"
         - name: MQ_QMGR_NAME
           value: NATIVEHAQM
         - name: MQ_DATA
