@@ -6,7 +6,7 @@ secretGenerator:
   files:
   - x1-root.crt=x1-root.pem
   - r10.crt=r10.pem
-  type: "kubernetes.io/tls"
+  type: "Opaque"
 
 generatorOptions:
   disableNameSuffixHash: true
