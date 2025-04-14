@@ -22,4 +22,5 @@ spec:
               - secret:
                   secretName: letsencrypt-chain   
                   items:
-                    - ca.crt
+                    - x1-root.crt
+                    - r10.crt
