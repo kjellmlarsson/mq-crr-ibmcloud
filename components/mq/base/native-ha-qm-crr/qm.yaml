@@ -5,7 +5,7 @@ metadata:
   annotations:
     certmanager.k8s.io/disable-auto-restart: "true"
     configmap.reloader.stakater.com/reload: "native-ha-qm-configmap"
-    secret.reloader.stakater.com/reload: "mq-nativeha-internal-tls-secret,mq-external-tls-secret"
+    secret.reloader.stakater.com/reload: "mq-nativeha-internal-tls-secret,mq-external-tls-secret,letsencrypt-chain"
 spec:
   #telemetry:
   #  tracing:
@@ -38,6 +38,10 @@ spec:
             #  value: 'tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317'
           name: qmgr
   queueManager:
+    metrics:
+      enabled: true
+      tls:
+        provider: openshift
     route:
       enabled: true
     name: NATIVEHAQM

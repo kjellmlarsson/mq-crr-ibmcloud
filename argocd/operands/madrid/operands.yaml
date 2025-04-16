@@ -11,7 +11,10 @@ spec:
             sync-wave: "300"
           - name: reloader
             namespace: cp4i
-            sync-wave: "200"     
+            sync-wave: "200"
+          - name: openshift-monitoring
+            namespace: openshift-monitoring
+            sync-wave: "300"     
   template:
     metadata:
       name: '{{name}}'

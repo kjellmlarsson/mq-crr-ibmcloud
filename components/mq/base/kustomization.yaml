@@ -4,15 +4,5 @@ kind: Kustomization
 resources: 
   #- metrics
  
-  # Resources for QM using a self signed server certificate.
   - native-ha-qm-crr
   #- cphtestp/job.yaml
-
-  #- singleinstance-qm
-
-  #- messagingserver
-
-  # Resources for QM using certificate from LetsEncrypt
-  #- native-ha-qm-wellknowncerts
-
-  #- native-ha-qm-auth
