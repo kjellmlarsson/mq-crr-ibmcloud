@@ -18,4 +18,4 @@ resources:
 
   - tls/ca-ss-issuer.yaml
   - tls/nativeha-certificate.yaml
-  - tls/mq-server-certificate.yaml
+  - tls/queue-manager-certificate.yaml
