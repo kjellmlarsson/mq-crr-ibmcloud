@@ -3,11 +3,15 @@ kind: Kustomization
 
 # See: https://letsencrypt.org/certificates/
 
+resources:
+  - letsencrypt-clusterissuer.yaml
+
 secretGenerator:
 - name: letsencrypt-chain
   files:
   - x1-root.crt=x1-root.pem
   - r10.crt=r10.pem
+  - r11.crt=r11.pem
   type: "Opaque"
 
 generatorOptions:
