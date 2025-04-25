@@ -6,7 +6,7 @@ kind: Kustomization
 configMapGenerator:
   - name: qm2-configmap
     files:
-      - qm-config/tls.mqsc
+      - qm-config/config.mqsc
       - qm-config/mq.ini
 
 generatorOptions:
@@ -16,6 +16,5 @@ resources:
 
   - qm.yaml
 
-  - tls/ca-ss-issuer.yaml
   - tls/nativeha-certificate.yaml
   - tls/queue-manager-certificate.yaml
