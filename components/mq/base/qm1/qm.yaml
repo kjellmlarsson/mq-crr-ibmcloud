@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: native-ha-qm-crr
+  name: qm1
   annotations:
     certmanager.k8s.io/disable-auto-restart: "true"
     configmap.reloader.stakater.com/reload: "native-ha-qm-configmap"
@@ -44,7 +44,7 @@ spec:
         provider: openshift
     route:
       enabled: true
-    name: NATIVEHAQM
+    name: QM1
     availability:
       type: NativeHA
       tls:
@@ -73,12 +73,12 @@ spec:
         memory: 8Gi
     mqsc:
       - configMap:
-          name: native-ha-qm-configmap
+          name: qm1-configmap
           items:
             - tls.mqsc
     ini:
       - configMap:
-          name: native-ha-qm-configmap
+          name: qm1-configmap
           items:
             - mq.ini
   version: 9.4.2.0-r1

@@ -4,7 +4,7 @@ kind: Kustomization
 # Generate these config maps from mqsc files to support
 # syntax hignlighting in tooling.
 configMapGenerator:
-  - name: native-ha-qm-configmap
+  - name: qm2-configmap
     files:
       - qm-config/tls.mqsc
       - qm-config/mq.ini

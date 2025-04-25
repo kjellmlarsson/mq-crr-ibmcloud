@@ -4,5 +4,6 @@ kind: Kustomization
 resources: 
   #- metrics
  
-  - native-ha-qm-crr
+  - qm1
+  - qm2
   #- cphtestp/job.yaml

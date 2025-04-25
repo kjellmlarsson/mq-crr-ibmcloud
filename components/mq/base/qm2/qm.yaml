@@ -1,0 +1,104 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: qm2
+  annotations:
+    certmanager.k8s.io/disable-auto-restart: "true"
+    configmap.reloader.stakater.com/reload: "native-ha-qm-configmap"
+    secret.reloader.stakater.com/reload: "mq-nativeha-internal-tls-secret,mq-external-tls-secret,letsencrypt-chain"
+spec:
+  #telemetry:
+  #  tracing:
+  #    instana:
+  #      enabled: true
+  license:
+    accept: true
+    license: PATCHED_BY_KUSTOMIZE
+    metric: VirtualProcessorCore
+    use: PATCHED_BY_KUSTOMIZE
+  securityContext:
+    supplementalGroups: [99]
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: "yes"
+            # For instana tracing,
+            #- name: IBMMQ_RFH2_HEADERS_TO_EXPOSE
+            #  value: 'usr.<custome element1>, usr.<custom element 2>'
+            # For otel tracing
+            #- name: LOG_LEVEL
+            #  value: debug
+            #- name: MONITOR_LEVEL
+            #  value: debug
+            #- name: SPAN_FORMAT
+            #  value: otel
+            #- name: OTLP_EXPORTER_GRPC_ENDPOINT
+            #  value: 'tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317'
+          name: qmgr
+  queueManager:
+    metrics:
+      enabled: true
+      tls:
+        provider: openshift
+    route:
+      enabled: true
+    name: QM2
+    availability:
+      type: NativeHA
+      tls:
+        secretName: mq-nativeha-internal-tls-secret
+    storage:
+      queueManager:
+        size: 10Gi
+        class: PATCHED_BY_KUSTOMIZE
+        deleteClaim: true
+      persistedData:
+        size: 10Gi
+        enabled: false
+        class: PATCHED_BY_KUSTOMIZE
+        deleteClaim: true
+      recoveryLogs:
+        size: 10Gi
+        enabled: false
+        class: PATCHED_BY_KUSTOMIZE
+        deleteClaim: true
+    resources:
+      limits:
+        memory: 10Gi
+        cpu: 6
+      requests:
+        cpu: 4
+        memory: 8Gi
+    mqsc:
+      - configMap:
+          name: qm2-configmap
+          items:
+            - tls.mqsc
+    ini:
+      - configMap:
+          name: qm2-configmap
+          items:
+            - mq.ini
+  version: 9.4.2.0-r1
+  pki:
+    keys:
+      - name: default
+        secret:
+          secretName: mq-external-tls-secret
+          items:
+            - tls.key
+            - tls.crt
+    trust:
+      - name: trust
+        secret:
+          secretName: mq-external-tls-secret
+          items:
+            - tls.crt
+            - ca.crt
+  web:
+    enabled: true
+    manualConfig:
+      secret:
+        name: mqwebuser-secret 

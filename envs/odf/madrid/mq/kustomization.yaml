@@ -15,5 +15,11 @@ patches:
       group: mq.ibm.com
       version: v1beta1
       kind: QueueManager
-      name: native-ha-qm-crr
-   path: remote-native-ha-qm-crr-patch.yaml
+      name: qm1
+   path: remote-qm1-patch.yaml
+ - target:
+      group: mq.ibm.com
+      version: v1beta1
+      kind: QueueManager
+      name: qm2
+   path: remote-qm2-patch.yaml

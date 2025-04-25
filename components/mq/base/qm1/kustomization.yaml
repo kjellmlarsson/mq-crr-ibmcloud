@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Generate these config maps from mqsc files to support
+# syntax hignlighting in tooling.
+configMapGenerator:
+  - name: qm1-configmap
+    files:
+      - qm-config/tls.mqsc
+      - qm-config/mq.ini
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+resources: 
+
+  - qm.yaml
+
+  - tls/ca-ss-issuer.yaml
+  - tls/nativeha-certificate.yaml
+  - tls/queue-manager-certificate.yaml
