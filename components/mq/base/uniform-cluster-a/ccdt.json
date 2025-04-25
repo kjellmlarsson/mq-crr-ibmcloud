@@ -1,0 +1,172 @@
+{
+    "channel": [
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "UCLA"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "UCLA"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "UCLA"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm2-ibm-mq-qm-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "UCLA"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "QM1"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm2-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "QM2"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "QM1"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "HAQMCHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "qm2-ibm-mq-qm-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "QM2"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      }
+    ]
+  }
