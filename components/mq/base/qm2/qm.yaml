@@ -93,10 +93,11 @@ spec:
     trust:
       - name: trust
         secret:
-          secretName: qm2-external-tls-secret
+          secretName: letsencrypt-chain
           items:
-            - tls.crt
-            - ca.crt
+            - x1-root.crt
+            - r10.crt
+            - r11.crt
   web:
     enabled: true
     manualConfig:
