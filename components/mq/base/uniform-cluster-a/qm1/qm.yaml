@@ -4,7 +4,7 @@ metadata:
   name: qm1
   annotations:
     certmanager.k8s.io/disable-auto-restart: "true"
-    configmap.reloader.stakater.com/reload: "qm1-configmap"
+    configmap.reloader.stakater.com/reload: "qm1-config,uniform-cluster-common-config,uniform-cluster-ini"
     secret.reloader.stakater.com/reload: "qm1-nativeha-internal-tls-secret,qm1-external-tls-secret,letsencrypt-chain"
 spec:
   #telemetry:
