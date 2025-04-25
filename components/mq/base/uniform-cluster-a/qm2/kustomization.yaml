@@ -1,13 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-# Generate these config maps from mqsc files to support
-# syntax hignlighting in tooling.
 configMapGenerator:
-  - name: qm1-configmap
+  - name: qm2-config
     files:
-      - qm-config/config.mqsc
-      - qm-config/mq.ini
+      - config.mqsc
 
 generatorOptions:
   disableNameSuffixHash: true

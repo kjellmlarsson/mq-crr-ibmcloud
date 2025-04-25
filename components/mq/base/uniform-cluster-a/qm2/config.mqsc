@@ -1,0 +1,2 @@
+alter chl(DEMOCLUSTER_QM2) chltype(CLUSRCVR) conname('qm2-ibm-mq.cp4i.svc(1414)')
+alter chl(DEMOCLUSTER_QM1) chltype(CLUSSDR) conname('qm1-ibm-mq.cp4i.svc(1414)')

@@ -4,17 +4,12 @@ kind: Kustomization
 # Generate these config maps from mqsc files to support
 # syntax hignlighting in tooling.
 configMapGenerator:
-  - name: qm2-configmap
+  - name: uniform-cluster-common-config
     files:
-      - qm-config/config.mqsc
-      - qm-config/mq.ini
+      - config.mqsc
+  - name: uniform-cluster-ini
+    files:
+      - uniform-cluster.ini
 
 generatorOptions:
   disableNameSuffixHash: true
-
-resources: 
-
-  - qm.yaml
-
-  - tls/nativeha-certificate.yaml
-  - tls/mq-server-certificate.yaml

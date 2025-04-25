@@ -4,6 +4,7 @@ kind: Kustomization
 resources: 
   #- metrics
  
-  - qm1
-  - qm2
+  - uniform-cluster-a/qm1
+  - uniform-cluster-a/qm2
+  - uniform-cluster-a/common-qm-config
   #- cphtestp/job.yaml

@@ -73,14 +73,18 @@ spec:
         memory: 8Gi
     mqsc:
       - configMap:
-          name: qm2-configmap
+          name: uniform-cluster-common-config
+          items:
+            - config.mqsc
+      - configMap:
+          name: qm2-config
           items:
             - config.mqsc
     ini:
       - configMap:
-          name: qm2-configmap
+          name: uniform-cluster-ini
           items:
-            - mq.ini
+            - uniform-cluster.ini
   version: 9.4.2.0-r1
   pki:
     keys:
