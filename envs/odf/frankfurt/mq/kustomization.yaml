@@ -9,3 +9,11 @@ components:
 
 resources:
 - ../../../../components/mq/base
+
+patches:
+ - target:
+      group: mq.ibm.com
+      version: v1beta1
+      kind: QueueManager
+      name: native-ha-qm-crr
+   path: remote-native-ha-qm-crr-patch.yaml
