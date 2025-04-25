@@ -75,7 +75,7 @@ spec:
       - configMap:
           name: qm1-configmap
           items:
-            - tls.mqsc
+            - config.mqsc
     ini:
       - configMap:
           name: qm1-configmap
