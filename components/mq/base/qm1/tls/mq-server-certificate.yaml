@@ -1,13 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: mq-external-tls
+  name: qm1-external-tls
 spec:
   secretTemplate:
     annotations:
       cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
       cert-utils-operator.redhat-cop.io/generate-java-keystores: "true"
-  secretName: mq-server-certificate-secret
+  secretName: qm1-external-tls-secret
   duration: 2160h0m0s # 90d
   renewBefore: 360h0m0s # 15d
   subject:
@@ -22,9 +22,8 @@ spec:
     - digital signature
     - server auth
     - client auth
-  dnsNames:
-    - 'native-ha-qm-crr-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com'
-    - 'native-ha-qm-crr-ibm-mq-qm-cp4i.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com'
+  dnsNames: [] #Patched by Kustomize
+
   issuerRef:
     name: letsencrypt-cluster-issuer
     kind: ClusterIssuer

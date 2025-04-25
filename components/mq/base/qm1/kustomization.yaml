@@ -18,3 +18,4 @@ resources:
 
   - tls/nativeha-certificate.yaml
   - tls/queue-manager-certificate.yaml
+  - tls/mq-server-certificate.yaml

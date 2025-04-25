@@ -23,3 +23,15 @@ patches:
       kind: QueueManager
       name: qm2
    path: remote-qm2-patch.yaml
+ - target:
+      group: cert-manager.io
+      version: v1
+      kind: Certificate
+      name: qm1-external-tls
+   path: external-tls-qm1-patch.yaml
+ - target:
+      group: cert-manager.io
+      version: v1
+      kind: Certificate
+      name: qm2-external-tls
+   path: external-tls-qm2-patch.yaml
