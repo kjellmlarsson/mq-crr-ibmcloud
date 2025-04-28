@@ -4,7 +4,7 @@
 * Update the conname for this QMs cluster receiver channel
 alter chl(UCLA_QM1) chltype(CLUSRCVR) conname('qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com(443)')
 
-alter chl(UCLA_QM1) chltype(CLUSRCVR) conname('shorter.name(443)')
+*alter chl(UCLA_QM1) chltype(CLUSRCVR) conname('shorter.name(443)')
 
 * Create a cluster sender channel to QM2 
 alter chl(UCLA_QM2) chltype(CLUSSDR) conname('qm2-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com(443)')
