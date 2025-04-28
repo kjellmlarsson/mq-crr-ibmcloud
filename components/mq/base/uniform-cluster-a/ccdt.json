@@ -26,7 +26,7 @@
         "clientConnection": {
           "connection": [
             {
-              "host": "qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
+              "host": "qm2-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com",
               "port": 443
             }
           ],

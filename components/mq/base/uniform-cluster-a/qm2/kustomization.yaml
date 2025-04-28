@@ -4,7 +4,7 @@ kind: Kustomization
 configMapGenerator:
   - name: qm2-config
     files:
-      - config.mqsc
+      - config-routes.mqsc
 
 generatorOptions:
   disableNameSuffixHash: true
