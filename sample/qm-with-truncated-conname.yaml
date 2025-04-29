@@ -1,0 +1,96 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  namespace: cp4i
+  name: truncated-conname
+spec:
+  license:
+    accept: true
+    license: L-NUUP-23NH8Y
+    use: Production
+  queueManager:
+    availability:
+      type: SingleInstance
+    storage:
+      queueManager:
+        type: ephemeral
+    ini:
+      - configMap:
+          name: uniform-cluster-ini-cm
+          items:
+            - qm.ini
+    mqsc:
+      - configMap:
+          name: uniform-cluster-common-config-cm
+          items:
+            - config.mqsc
+      - configMap:
+          name: qm-mqsc-cm
+          items:
+            - config.mqsc
+    name: TEST
+  version: 9.4.2.0-r2
+  web:
+    enabled: false
+--- 
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: uniform-cluster-ini-cm
+  namespace: cp4i
+data:
+  qm.ini: |-
+    SSL:
+      OutboundSNI=HOSTNAME
+    AutoCluster:
+          # Repository1Conname gets truncated at 48 characters. Repository2Conname does not.
+          # Verify with echo "dis chl(UCLA_QM*) CONNAME" | runmqsc 
+          Repository1Conname=qm1-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com(443)
+          Repository1Name=QM1
+          Repository2Conname=qm2-ibm-mq-qm-cp4i.apps.67ed09ced6d44283b3abd409.eu1.techzone.ibm.com(443)
+          Repository2Name=QM2
+          ClusterName=UCLA
+          Type=Uniform
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: uniform-cluster-ini-short-cm
+  namespace: cp4i
+data:
+  qm.ini: |-
+    SSL:
+      OutboundSNI=HOSTNAME
+    AutoCluster:
+          Repository1Conname=qm1-ibm-mq-qm-cp4i.apps.techzone.ibm.com(443)
+          Repository1Name=QM1
+          Repository2Conname=qm2-ibm-mq-qm-cp4i.apps.techzone.ibm.com(443)
+          Repository2Name=QM2
+          ClusterName=UCLA
+          Type=Uniform
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: uniform-cluster-common-config-cm
+  namespace: cp4i
+data:
+  config.mqsc: |-
+
+    DEFINE CHANNEL('+AUTOCL+_+QMNAME+') CHLTYPE(clusrcvr) TRPTYPE(tcp) CONNAME('+CONNAME+') CLUSTER('+AUTOCL+') REPLACE
+
+    DEFINE QLOCAL(Q1) CLUSTER(UCLA) DEFPSIST(YES) DEFBIND(NOTFIXED) REPLACE
+    DEFINE QLOCAL(Q2) CLUSTER(UCLA) DEFPSIST(YES) DEFBIND(NOTFIXED) REPLACE
+
+    DEFINE CHANNEL(HAQMCHL) CHLTYPE(SVRCONN) TRPTYPE(TCP) SSLCAUTH(OPTIONAL) SSLCIPH('ANY_TLS12_OR_HIGHER') REPLACE
+    SET CHLAUTH(HAQMCHL) TYPE(BLOCKUSER) USERLIST('nobody') ACTION(ADD)
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: qm-mqsc-cm
+  namespace: cp4i
+data:
+  config.mqsc: |-
+    ALTER CHL(UCLA_QM1) CHLTYPE(CLUSSDR) CONNAME('updated.value(1414)') 
+    ALTER CHL(UCLA_QM2) CHLTYPE(CLUSSDR) CONNAME('updated.value(1414)')

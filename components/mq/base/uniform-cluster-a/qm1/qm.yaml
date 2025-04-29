@@ -79,12 +79,12 @@ spec:
       - configMap:
           name: qm1-config
           items:
-            - config-routes.mqsc
+            - qm1.mqsc
     ini:
       - configMap:
           name: uniform-cluster-ini
           items:
-            - uniform-cluster-routes.ini
+            - qm.ini
   version: 9.4.2.0-r1
   pki:
     keys:
