@@ -9,7 +9,7 @@ configMapGenerator:
       - config.mqsc
   - name: uniform-cluster-ini
     files:
-      - uniform-cluster.ini
+      - uniform-cluster-routes.ini
 
 generatorOptions:
   disableNameSuffixHash: true

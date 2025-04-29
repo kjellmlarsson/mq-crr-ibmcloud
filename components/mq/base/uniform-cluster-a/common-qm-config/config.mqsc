@@ -1,7 +1,7 @@
 * The +CONNAME+ insert is available if the qm is created using the -iv parameter on the CLI.
 * since we don't control that, we have to alter the QM conname for each specific QM that is created.
 * This is done in the config.mqsc file in each qms directory
-DEFINE CHANNEL('+AUTOCL+_+QMNAME+') CHLTYPE(clusrcvr) TRPTYPE(tcp) CONNAME(+CONNAME+) CLUSTER('+AUTOCL+') REPLACE
+DEFINE CHANNEL('+AUTOCL+_+QMNAME+') CHLTYPE(clusrcvr) TRPTYPE(tcp) CONNAME('+CONNAME+') CLUSTER('+AUTOCL+') REPLACE
 
 DEFINE QLOCAL(Q1) CLUSTER(UCLA) DEFPSIST(YES) DEFBIND(NOTFIXED) REPLACE
 DEFINE QLOCAL(Q2) CLUSTER(UCLA) DEFPSIST(YES) DEFBIND(NOTFIXED) REPLACE
