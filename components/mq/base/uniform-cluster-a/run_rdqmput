@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export MQDIR=/opt/mqm
+export DYLD_LIBRARY_PATH=${MQDIR}/lib64
+
+# Add path to rdqmput binary.
+export PATH=$PATH:/Users/kjelllarsson/Projects/mq-rdqm/samples/C/macOS
+
+rdqmput $*
