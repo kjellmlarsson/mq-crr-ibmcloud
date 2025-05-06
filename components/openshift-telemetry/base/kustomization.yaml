@@ -3,4 +3,3 @@ kind: Kustomization
 
 resources:
   - tempostack.yaml
-  - otelcollector.yaml
