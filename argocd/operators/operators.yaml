@@ -12,6 +12,8 @@ spec:
             namespace: cp4i
           - name: cert-utils
             namespace: cert-utils-operator
+          - name: openshift-telemetry
+            namespace: openshift-opentelemetry-operator
   template:
     metadata:
       name: '{{name}}-operator'
