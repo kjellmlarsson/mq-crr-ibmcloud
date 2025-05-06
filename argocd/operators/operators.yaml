@@ -12,8 +12,8 @@ spec:
             namespace: cp4i
           - name: cert-utils
             namespace: cert-utils-operator
-          - name: openshift-tempo-operator
-            namespace: openshift-tempo-operator
+          - name: openshift-telemetry-operator
+            namespace: openshift-telemetry-operator
   template:
     metadata:
       name: '{{name}}-operator'

@@ -2,6 +2,7 @@ apiVersion: tempo.grafana.com/v1alpha1
 kind: TempoStack
 metadata:
   name: tempostack
+  namespace: openshift-tempo-operator
 spec:
   storageSize: 20Gi 
   storage:

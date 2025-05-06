@@ -17,7 +17,7 @@ spec:
             sync-wave: "300"
           - name: openshift-telemetry
             namespace: openshift-opentelemetry-operator
-            sync-wave: "300"          
+            sync-wave: "300"
   template:
     metadata:
       name: '{{name}}'
