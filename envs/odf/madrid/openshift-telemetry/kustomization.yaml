@@ -5,4 +5,4 @@ resources:
 - ../../../../components/openshift-telemetry/base
 
 components:
-  - ../../../../components/openshift-telemetry/variants/odf
+- ../../../../components/openshift-telemetry/variants/cloudprovider/odf
