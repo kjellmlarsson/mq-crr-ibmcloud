@@ -2,6 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - otel-namespace.yaml
-  - otel-operatorgroup.yaml
-  - otel-subscription.yaml
+  - tempo-namespace.yaml
+  - tempo-operatorgroup.yaml
+  - tempo-subscription.yaml

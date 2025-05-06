@@ -7,10 +7,12 @@ metadata:
     configmap.reloader.stakater.com/reload: "qm1-config,uniform-cluster-common-config,uniform-cluster-ini"
     secret.reloader.stakater.com/reload: "qm1-nativeha-internal-tls-secret,qm1-external-tls-secret,letsencrypt-chain"
 spec:
-  #telemetry:
-  #  tracing:
-  #    instana:
-  #      enabled: true
+  telemetry:
+    tracing:
+      # Instana library used in MQ pod to export OpenTelemetry data,
+      # no Instana installs used.
+      instana:
+        enabled: true
   license:
     accept: true
     license: PATCHED_BY_KUSTOMIZE
@@ -32,10 +34,10 @@ spec:
             #  value: debug
             #- name: MONITOR_LEVEL
             #  value: debug
-            #- name: SPAN_FORMAT
-            #  value: otel
-            #- name: OTLP_EXPORTER_GRPC_ENDPOINT
-            #  value: 'tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317'
+            - name: SPAN_FORMAT
+              value: otel
+            - name: OTLP_EXPORTER_GRPC_ENDPOINT
+              value: 'tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317'
           name: qmgr
   queueManager:
     metrics:
