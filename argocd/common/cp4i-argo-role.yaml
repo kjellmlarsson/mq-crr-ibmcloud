@@ -33,6 +33,7 @@ rules:
       - objectbucket.io
       - tempo.grafana.com
       - opentelemetry.io
+      - projects.project.openshift.io
       - ""
     resources:
       - '*'
