@@ -35,7 +35,7 @@ rules:
       - opentelemetry.io
       - projects.project.openshift.io
       - observability.openshift.io
-      - tokenreviews.authentication.k8s.io
+      - authentication.k8s.io
       - ""
     resources:
       - '*'
