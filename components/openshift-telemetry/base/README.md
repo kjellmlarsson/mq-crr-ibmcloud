@@ -19,4 +19,4 @@ stringData:
 type: Opaque
 ```
 
-Also make sure that a secret named `s3-ca` containing the CA for the s3 endpoint if a secure endpoint is being used. Otherwise remove the reference from the TempoStack object.
+Also make sure that a secret named `s3-ca` containing the CA (defined as ca.crt) for the s3 endpoint (for Nooba on odf, the secret is noobaa-mgmt-serving-cert) if a secure endpoint is being used. Otherwise remove the reference from the TempoStack object. 
