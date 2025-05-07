@@ -4,5 +4,4 @@ metadata:
   name: openshift-cluster-observability-operator-og
   namespace: openshift-cluster-observability-operator
 spec:
-  targetNamespaces:
-    - openshift-cluster-observability-operator
+  upgradeStrategy: Default
