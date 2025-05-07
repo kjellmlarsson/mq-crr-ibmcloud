@@ -34,6 +34,7 @@ rules:
       - tempo.grafana.com
       - opentelemetry.io
       - projects.project.openshift.io
+      - uiplugins.observability.openshift.io
       - ""
     resources:
       - '*'
