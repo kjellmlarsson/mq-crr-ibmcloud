@@ -22,10 +22,10 @@ spec:
   template:
     gateway:
       enabled: true
-    queryFrontend:
-      jaegerQuery:
-        enabled: true
-        ingress:
-          route:
-            termination: edge
-          type: route
+    #queryFrontend:
+    #  jaegerQuery:
+    #    enabled: true
+    #    ingress:
+    #      route:
+    #        termination: edge
+    #      type: route
