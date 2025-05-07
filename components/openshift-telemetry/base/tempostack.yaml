@@ -4,6 +4,7 @@ metadata:
   name: tempostack
   namespace: openshift-tempo-operator
 spec:
+  tenants: {}
   storageSize: 20Gi 
   storage:
     secret: 
