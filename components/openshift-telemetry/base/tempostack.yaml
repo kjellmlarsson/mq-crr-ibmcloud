@@ -13,6 +13,8 @@ spec:
     tls: 
       enabled: true
       caName: s3-ca
+  observability:
+    tracing: {}
   #template:
   #  queryFrontend:
   #    jaegerQuery:
