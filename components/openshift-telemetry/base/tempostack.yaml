@@ -13,11 +13,11 @@ spec:
     tls: 
       enabled: true
       caName: s3-ca
-  template:
-    queryFrontend:
-      jaegerQuery:
-        enabled: true
-        ingress:
-          route:
-            termination: edge
-          type: route
+  #template:
+  #  queryFrontend:
+  #    jaegerQuery:
+  #      enabled: true
+  #      ingress:
+  #        route:
+  #          termination: edge
+  #        type: route
