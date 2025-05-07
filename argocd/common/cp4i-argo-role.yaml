@@ -36,6 +36,7 @@ rules:
       - projects.project.openshift.io
       - observability.openshift.io
       - authentication.k8s.io
+      - authorization.k8s.io
       - ""
     resources:
       - '*'
