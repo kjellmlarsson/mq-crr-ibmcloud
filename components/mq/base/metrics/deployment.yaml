@@ -1,18 +1,17 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: mq-metrics
+  name: qm1-mq-metrics
   namespace: cp4i
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mq-metric-exporter
+      app: qm1-mq-metric-exporter
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        app: mq-metric-exporter
+        app: qm1-mq-metric-exporter
     spec:
       containers:
         - name: qm1-mq-metric-exporter
@@ -25,6 +24,23 @@ spec:
           ports:
             - containerPort: 9157
               name: web
+--- 
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: qm2-mq-metrics
+  namespace: cp4i
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qm2-mq-metric-exporter
+  template:
+    metadata:
+      labels:
+        app: qm2-mq-metric-exporter
+    spec:
+      containers:
         - name: qm2-mq-metric-exporter
           image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics:latest'
           envFrom:
@@ -33,5 +49,5 @@ spec:
           - secretRef:
               name: empty-metrics-credentials
           ports:
-            - containerPort: 9158
+            - containerPort: 9157
               name: web
