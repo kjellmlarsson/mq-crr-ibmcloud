@@ -20,8 +20,6 @@ spec:
   observability:
     tracing: {}
   template:
-    gateway:
-      enabled: true
     queryFrontend:
       jaegerQuery:
         enabled: true
