@@ -15,11 +15,21 @@ spec:
         app: mq-metric-exporter
     spec:
       containers:
-        - name: mq-metric-exporter
+        - name: qm1-mq-metric-exporter
           image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics:latest'
           envFrom:
           - configMapRef:
-              name: metrics-configuration
+              name: qm1-metrics-configuration
+          - secretRef:
+              name: empty-metrics-credentials
+          ports:
+            - containerPort: 9157
+              name: web
+        - name: qm2-mq-metric-exporter
+          image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics:latest'
+          envFrom:
+          - configMapRef:
+              name: qm2-metrics-configuration
           - secretRef:
               name: empty-metrics-credentials
           ports:
