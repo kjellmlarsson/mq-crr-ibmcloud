@@ -18,9 +18,9 @@ spec:
           - name: openshift-telemetry
             namespace: openshift-opentelemetry-operator
             sync-wave: "300"
-          - name: openshift-cluster-observability
-            namespace: openshift-cluster-observability-operator
-            sync-wave: "300"
+          #- name: openshift-cluster-observability
+          #  namespace: openshift-cluster-observability-operator
+          #  sync-wave: "300"
   template:
     metadata:
       name: '{{name}}'
