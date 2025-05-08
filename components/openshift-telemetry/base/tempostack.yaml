@@ -4,11 +4,11 @@ metadata:
   name: tempostack
   namespace: openshift-tempo-operator
 spec:
-  tenants:
-    mode: openshift
-    authentication:
-      - tenantName: frankfurt
-        tenantId: "a8e6a61a-abba-47e7-89a8-49b8308e6db7"
+  #tenants:
+  #  mode: openshift
+  #  authentication:
+  #    - tenantName: frankfurt
+  #      tenantId: "a8e6a61a-abba-47e7-89a8-49b8308e6db7"
   storageSize: 20Gi 
   storage:
     secret: 
@@ -22,10 +22,10 @@ spec:
   template:
     gateway:
       enabled: true
-    #queryFrontend:
-    #  jaegerQuery:
-    #    enabled: true
-    #    ingress:
-    #      route:
-    #        termination: edge
-    #      type: route
+    queryFrontend:
+      jaegerQuery:
+        enabled: true
+        ingress:
+          route:
+            termination: edge
+          type: route
