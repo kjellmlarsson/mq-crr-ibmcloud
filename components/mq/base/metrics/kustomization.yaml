@@ -4,7 +4,8 @@ kind: Kustomization
 resources:
  
   - buildconfig.yaml
-  - metrics-configuration.yaml
+  - qm1-metrics-configuration.yaml
+  - qm2-metrics-configuration.yaml
   - empty-metrics-credentials.yaml
   - deployment.yaml
   - podmonitor.yaml
