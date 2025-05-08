@@ -33,5 +33,5 @@ spec:
           - secretRef:
               name: empty-metrics-credentials
           ports:
-            - containerPort: 9157
+            - containerPort: 9158
               name: web
