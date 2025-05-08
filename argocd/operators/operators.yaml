@@ -14,8 +14,8 @@ spec:
             namespace: cert-utils-operator
           - name: openshift-telemetry
             namespace: openshift-telemetry-operator
-          - name: openshift-cluster-observability
-            namespace: openshift-telemetry-operator
+          #- name: openshift-cluster-observability
+          #  namespace: openshift-cluster-observability-operator
   template:
     metadata:
       name: '{{name}}-operator'
