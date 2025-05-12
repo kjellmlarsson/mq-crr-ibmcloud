@@ -35,3 +35,6 @@ curl -s https://crt.sh/?d=1720081 > /tmp/comodo.pem
 
 # Create a JKS keystore based on the p12 truststore
 keytool -importkeystore -srckeystore $TRUSTSTORE_P12 -srcstoretype pkcs12 -destkeystore $TRUSTSTORE_JKS -storepass $PASSWORD -srcstorepass $PASSWORD -deststorepass $PASSWORD
+
+# Write all the CA certificates to a text file.
+openssl pkcs12 -in $TRUSTSTORE_P12 -noenc -password pass:$PASSWORD | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > truststores/ca.crt
