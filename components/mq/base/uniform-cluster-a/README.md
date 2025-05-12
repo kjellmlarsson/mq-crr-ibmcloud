@@ -17,7 +17,7 @@ Uniform cluster consists of two QMs, QM1 and QM2. QM1 and QM2 use CRR and are Li
 
 #### Running the sample
 
-1. ```./run_rdqmput -v 2 -b 20 -m 10'*ANY_QM' Q1``` will run 20 batches of 10 messages with output verbosity 2 which reports the status of each message
+1. ```./run_rdqmput -v 2 -b 20 -m 10 '*ANY_QM' Q1``` will run 20 batches of 10 messages with output verbosity 2 which reports the status of each message
 1. Check which of the two live queue managers that is receiving messages. Delete the statefulset for this QM, simulating a failure
 1. Confirm that the client reconnects to the other live queue manager and continues putting messages
 1. Perform a (planned) switchover, moving the running QMs from one region to the other
