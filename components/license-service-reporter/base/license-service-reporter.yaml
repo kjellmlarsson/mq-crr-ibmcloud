@@ -1,3 +1,4 @@
+apiVersion: operator.ibm.com/v1alpha1
 kind: IBMLicenseServiceReporter
 metadata:
   name: instance
