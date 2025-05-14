@@ -1,3 +1,7 @@
+apiVersion: operator.ibm.com/v1alpha1
+kind: IBMLicensing
+metadata:
+  name: instance
 spec:
   sender:
     reporterURL: https://ibm-license-service-reporter.ibm-ls-reporter.svc:8080

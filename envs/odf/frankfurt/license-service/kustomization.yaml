@@ -5,8 +5,4 @@ resources:
   - ../../../../components/license-service/base
 
 patchesStrategicMerge:
- - target:
-      apiVersion: operator.ibm.com/v1alpha1
-      kind: IBMLicensing
-      name: instance
-   path: sender-patch.yaml
+ - sender-patch.yaml
