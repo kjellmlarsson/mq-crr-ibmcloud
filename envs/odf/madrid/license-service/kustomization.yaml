@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - ../../../../components/license-service/base
 
-patches:
+patchesStrategicMerge:
  - target:
       apiVersion: operator.ibm.com/v1alpha1
       kind: IBMLicensing
