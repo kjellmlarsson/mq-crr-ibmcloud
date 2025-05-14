@@ -1,0 +1,5 @@
+spec:
+  sender:
+    reporterURL: https://ibm-license-service-reporter.ibm-ls-reporter.svc:8080
+    clusterName: madrid
+    clusterID: madrid

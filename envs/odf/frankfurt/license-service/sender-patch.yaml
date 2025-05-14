@@ -1,0 +1,5 @@
+spec:
+  sender:
+    reporterURL: https://ibm-license-service-reporter-ibm-ls-reporter.apps.67ed0a2171917a5408c1aee8.ocp.techzone.ibm.com
+    clusterName: frankfurt
+    clusterID: frankfurt

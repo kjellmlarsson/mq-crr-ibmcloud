@@ -3,3 +3,10 @@ kind: Kustomization
 
 resources:
   - ../../../../components/license-service/base
+
+patches:
+ - target:
+      apiVersion: operator.ibm.com/v1alpha1
+      kind: IBMLicensing
+      name: instance
+   path: sender-patch.yaml

@@ -10,3 +10,9 @@ spec:
   version: 4.2.15
   license:
     accept: true
+  sender:
+    reporterURL: PATCHED_BY_KUSTOMIZE
+    clusterName: PATCHED_BY_KUSTOMIZE
+    clusterID: PATCHED_BY_KUSTOMIZE
+    reporterSecretToken: reporter-secret-token
+    validateReporterCerts: false
