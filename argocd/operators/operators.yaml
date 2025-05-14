@@ -16,6 +16,8 @@ spec:
             namespace: openshift-telemetry-operator
           - name: license-service
             namespace: ibm-licensing
+          - name: license-service-reporter
+            namespace: ibm-ls-reporter
           #- name: openshift-cluster-observability
           #  namespace: openshift-cluster-observability-operator
   template:
