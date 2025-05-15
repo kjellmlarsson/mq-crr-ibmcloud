@@ -18,6 +18,12 @@ spec:
           - name: openshift-telemetry
             namespace: openshift-opentelemetry-operator
             sync-wave: "300"
+          - name: license-service
+            namespace: ibm-licensing
+            sync-wave: "200"
+          - name: license-service-reporter
+            namespace: ibm-ls-reporter
+            sync-wave: "201"
           #- name: openshift-cluster-observability
           #  namespace: openshift-cluster-observability-operator
           #  sync-wave: "300"

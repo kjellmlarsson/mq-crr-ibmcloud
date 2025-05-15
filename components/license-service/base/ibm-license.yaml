@@ -1,0 +1,18 @@
+apiVersion: operator.ibm.com/v1alpha1
+kind: IBMLicensing
+metadata:
+  name: instance
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
+spec:
+  datasource: datacollector
+  httpsEnable: true
+  version: 4.2.15
+  license:
+    accept: true
+  sender:
+    reporterURL: PATCHED_BY_KUSTOMIZE
+    clusterName: PATCHED_BY_KUSTOMIZE
+    clusterID: PATCHED_BY_KUSTOMIZE
+    reporterSecretToken: reporter-secret-token
+    validateReporterCerts: false

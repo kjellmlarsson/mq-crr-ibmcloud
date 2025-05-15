@@ -1,0 +1,12 @@
+apiVersion: operator.ibm.com/v1alpha1
+kind: IBMLicenseServiceReporter
+metadata:
+  name: instance
+  namespace: ibm-ls-reporter
+spec:
+  authentication:
+    useradmin:
+      enabled: true
+  license:
+    accept: true
+  version: 4.2.15
