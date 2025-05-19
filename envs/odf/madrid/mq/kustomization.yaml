@@ -5,7 +5,7 @@ components:
 - ../../../../components/mq/variants/cloudprovider/odf
 - ../../../../components/mq/variants/nonprod
 - ../../../../components/mq/variants/region/madrid
-- ../../../../components/mq/variants/crr/recovery
+- ../../../../components/mq/variants/crr/live
 
 resources:
 - ../../../../components/mq/base
