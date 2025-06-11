@@ -6,6 +6,7 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - ibm.com
       - apiconnect.ibm.com
       - eventstreams.ibm.com
       - integration.ibm.com
