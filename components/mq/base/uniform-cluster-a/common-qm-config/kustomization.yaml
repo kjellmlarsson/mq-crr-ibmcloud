@@ -13,3 +13,6 @@ configMapGenerator:
 
 generatorOptions:
   disableNameSuffixHash: true
+
+resources:
+  - tls/ca-ss-issuer.yaml

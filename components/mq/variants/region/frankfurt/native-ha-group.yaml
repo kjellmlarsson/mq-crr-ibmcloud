@@ -11,9 +11,9 @@ spec:
           tls:
             key:
               secretName: default-cert-copy
-              items:
-                - tls.key
-                - tls.crt
+              #items:
+              #  - tls.key
+              #  - tls.crt
         remotes: 
           - addresses:  
             - PATCHED_BY_KUSTOMIZE
