@@ -11,8 +11,8 @@ spec:
     tracing:
       # Instana library used in MQ pod to export OpenTelemetry data,
       # no Instana installs used.
-      instana:
-        enabled: true
+      # instana:
+      #   enabled: true
   license:
     accept: true
     license: PATCHED_BY_KUSTOMIZE
@@ -87,7 +87,7 @@ spec:
           name: uniform-cluster-ini
           items:
             - qm.ini
-  version: 9.4.2.0-r1
+  version: 9.4.4.1-r1
   pki:
     keys:
       - name: default

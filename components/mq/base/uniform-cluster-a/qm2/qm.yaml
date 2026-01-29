@@ -7,10 +7,10 @@ metadata:
     configmap.reloader.stakater.com/reload: "qm2-config,uniform-cluster-common-config,uniform-cluster-ini"
     secret.reloader.stakater.com/reload: "qm2-nativeha-internal-tls-secret,qm2-external-tls-secret,letsencrypt-chain"
 spec:
-  telemetry:
-    tracing:
-      instana:
-        enabled: true
+  # telemetry:
+  #   tracing:
+  #     instana:
+  #       enabled: true
   license:
     accept: true
     license: PATCHED_BY_KUSTOMIZE
@@ -85,7 +85,7 @@ spec:
           name: uniform-cluster-ini
           items:
             - qm.ini
-  version: 9.4.2.0-r1
+  version: 9.4.4.1-r1
   pki:
     keys:
       - name: default
