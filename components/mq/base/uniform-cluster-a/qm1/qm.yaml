@@ -71,7 +71,7 @@ spec:
         memory: 500Mi
         cpu: 500m
       requests:
-        cpu: 300m
+        cpu: 200m
         memory: 100Mi
     mqsc:
       - configMap:
