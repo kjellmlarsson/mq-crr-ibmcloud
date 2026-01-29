@@ -1,7 +1,7 @@
 apiVersion: console.openshift.io/v1
 kind: ConsoleNotification
 metadata:
-  name: us-east
+  name: frankfurt
 spec:
   text: This is the cluster in Frankfurt.
   location: BannerTop 
