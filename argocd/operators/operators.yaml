@@ -10,16 +10,10 @@ spec:
             namespace: cert-manager-operator
           - name: mq
             namespace: cp4i
+          - name: instana-agent
+            namespace: openshift-operators
           - name: cert-utils
             namespace: cert-utils-operator
-          - name: openshift-telemetry
-            namespace: openshift-telemetry-operator
-          - name: license-service
-            namespace: ibm-licensing
-          - name: license-service-reporter
-            namespace: ibm-ls-reporter
-          #- name: openshift-cluster-observability
-          #  namespace: openshift-cluster-observability-operator
   template:
     metadata:
       name: '{{name}}-operator'
