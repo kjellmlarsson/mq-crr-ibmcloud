@@ -66,11 +66,11 @@ spec:
         deleteClaim: true
     resources:
       limits:
-        memory: 10Gi
-        cpu: 6
+        memory: 2Gi
+        cpu: 2
       requests:
-        cpu: 4
-        memory: 8Gi
+        cpu: 300m
+        memory: 200Mi
     mqsc:
       - configMap:
           name: uniform-cluster-common-config

@@ -71,8 +71,8 @@ spec:
         memory: 2Gi
         cpu: 2
       requests:
-        cpu: 1
-        memory: 1Gi
+        cpu: 300m
+        memory: 200Mi
     mqsc:
       - configMap:
           name: uniform-cluster-common-config
