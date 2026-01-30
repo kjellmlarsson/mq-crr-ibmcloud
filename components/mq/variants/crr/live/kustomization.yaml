@@ -4,4 +4,9 @@ kind: Component
 patches:
   - target:
       kind: QueueManager
+      name: qm1
+    path: native-ha-group.yaml
+  - target:
+      kind: QueueManager
+      name: qm2
     path: native-ha-group.yaml

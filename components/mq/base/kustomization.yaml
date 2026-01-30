@@ -4,6 +4,6 @@ kind: Kustomization
 resources: 
    
   - singleinstance-qm/
-  #- uniform-cluster-a/qm1
-  #- uniform-cluster-a/qm2
+  - uniform-cluster-a/qm1
+  - uniform-cluster-a/qm2
   - uniform-cluster-a/common-qm-config
