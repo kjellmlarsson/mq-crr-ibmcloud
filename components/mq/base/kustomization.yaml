@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources: 
    
+  - metrics
   - singleinstance-qm/
   - uniform-cluster-a/qm1
   - uniform-cluster-a/qm2
