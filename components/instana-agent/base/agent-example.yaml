@@ -1,0 +1,97 @@
+apiVersion: instana.io/v1
+kind: InstanaAgent
+metadata: 
+  name: instana-agent
+spec:
+  cluster:
+    name: <cluster-name>
+  zone:
+    name: <zone-name>
+  agent:
+    downloadKey: <dl-key>
+    endpointHost: ingress-orange-saas.instana.io
+    endpointPort: '443'
+    key: <key>
+    configuration_yaml: |
+      com.instana.plugin.ibmmq:
+        enabled: true
+        poll_rate: 10
+        support_ha: true
+        queueManagers:
+          QM1:
+            channel: 'METRICS'
+      # Secrets
+      com.instana.secrets:
+        enabled: false
+
+      # Host
+      com.instana.plugin.host:
+        enabled: false
+
+      # Hardware & Zone
+      com.instana.plugin.generic.hardware:
+        enabled: false
+
+      # Apache Httpd
+      com.instana.plugin.httpd:
+        enabled: false
+
+      # Custom processes
+      com.instana.plugin.process:
+        enabled: false
+
+      # Memcached
+      com.instana.plugin.memcached:
+        enabled: false
+
+      # MongoDB
+      com.instana.plugin.mongodb:
+        enabled: false
+
+      # Mssql
+      com.instana.plugin.mssql:
+        enabled: false
+
+      # Mysql
+      com.instana.plugin.mysql:
+        enabled: false
+
+      # MariaDB
+      com.instana.plugin.mariadb:
+        enabled: false
+
+      # PostgreSQL
+      com.instana.plugin.postgresql:
+        enabled: false
+
+      # Redis
+      com.instana.plugin.redis:
+        enabled: false
+
+      # RabbitMq
+      com.instana.plugin.rabbitmq:
+        enabled: false
+
+      # OracleDB
+      com.instana.plugin.oracledb:
+        enabled: false
+
+      # StatsD
+      com.instana.plugin.statsd:
+        enabled: false
+
+      # Java & Custom JMX
+      com.instana.plugin.java:
+        enabled: false
+
+      # Java Tracing
+      com.instana.plugin.javatrace:
+        enabled: false
+
+      # PHP Tracing
+      com.instana.plugin.php:
+        enabled: false
+
+      # SAP HANA
+      com.instana.plugin.saphana:
+        enabled: false
