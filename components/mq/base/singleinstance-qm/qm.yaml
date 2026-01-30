@@ -31,7 +31,7 @@ spec:
             - mq.ini
     availability:
       type: SingleInstance
-    name: SINGLEINSTANCEQM
+    name: SIQMSEBJAN
     resources:
       limits:
         cpu: 500m
