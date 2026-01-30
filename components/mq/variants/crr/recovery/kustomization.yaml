@@ -6,7 +6,7 @@ patches:
       kind: QueueManager
       name: qm1
     path: native-ha-group.yaml
-   - target:
+  - target:
       kind: QueueManager
       name: qm2
     path: native-ha-group.yaml
