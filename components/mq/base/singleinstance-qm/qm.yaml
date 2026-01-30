@@ -58,3 +58,11 @@ spec:
             - tls.crt
   web:
     enabled: true
+   console:
+      authentication:
+        provider: manual
+      authorization:
+        provider: manual
+    manualConfig:
+      secret:
+        name: mqwebuser-secret
