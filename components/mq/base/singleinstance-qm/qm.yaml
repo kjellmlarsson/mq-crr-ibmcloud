@@ -58,7 +58,7 @@ spec:
             - tls.crt
   web:
     enabled: true
-   console:
+    console:
       authentication:
         provider: manual
       authorization:
