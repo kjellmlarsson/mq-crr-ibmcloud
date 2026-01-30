@@ -14,3 +14,4 @@ generatorOptions:
 
 resources:
   - qm.yaml
+  - mq-server-certificate.yaml
