@@ -18,5 +18,3 @@ spec:
             channel: 'METRICS'
           QM2:
             channel: 'METRICS'
-          QM3:
-            channel: 'METRICS'
