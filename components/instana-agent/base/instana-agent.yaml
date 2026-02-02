@@ -116,3 +116,5 @@ spec:
             channel: 'METRICS'
           NEWQM10:
             channel: 'METRICS'
+          PM22:
+            channel: 'METRICS'
