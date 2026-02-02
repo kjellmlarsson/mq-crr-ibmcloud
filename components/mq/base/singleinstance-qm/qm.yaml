@@ -40,6 +40,7 @@ spec:
     storage:
       defaultClass: ocs-external-storagecluster-ceph-rbd
       queueManager:
+        deleteClaim: true
         type: persistent-claim
   version: 9.4.4.1-r1
   pki:
