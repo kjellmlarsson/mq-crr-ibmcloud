@@ -1,10 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-resources: 
+resources:
    
   - metrics
   - singleinstance-qm/
+  - qm-si-2/
   - uniform-cluster-a/qm1
   - uniform-cluster-a/qm2
   - uniform-cluster-a/common-qm-config

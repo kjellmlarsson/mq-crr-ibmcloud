@@ -12,8 +12,10 @@ spec:
         poll_rate: 10
         support_ha: true
         queueManagers:
-          SIQMSEBJAN: 
-            channel: 'METRICS' 
+          SIQMSEBJAN:
+            channel: 'METRICS'
+          QMSI2:
+            channel: 'METRICS'
           QM1:
             channel: 'METRICS'
           QM2:
