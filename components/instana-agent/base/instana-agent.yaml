@@ -4,7 +4,6 @@ metadata:
   name: instana-agent
   annotations:
     argocd.argoproj.io/sync-options: ServerSideApply=true
-  namespace: instana-agent
 spec:
   agent:
     configuration_yaml: |
