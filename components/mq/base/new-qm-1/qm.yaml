@@ -53,9 +53,11 @@ spec:
     trust:
       - name: trust
         secret:
-          secretName: new-qm-1-external-tls-secret
+          secretName: letsencrypt-chain
           items:
-            - tls.crt
+            - x1-root.crt
+            - r10.crt
+            - r11.crt
   web:
     enabled: true
     console:
