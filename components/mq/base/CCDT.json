@@ -1,0 +1,25 @@
+{
+    "channel": [
+      {
+        "name": "SICHL",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "singleinstance-qm-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "SIQMSEBJAN"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      }
+    ]
+  }
