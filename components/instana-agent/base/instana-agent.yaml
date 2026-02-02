@@ -6,15 +6,16 @@ metadata:
     argocd.argoproj.io/sync-options: ServerSideApply=true
   namespace: instana-agent
 spec:
-  configuration_yaml: |
-    com.instana.plugin.ibmmq:
-      enabled: true
-      poll_rate: 10
-      support_ha: true
-      queueManagers:
-        SIQMSEBJAN: 
-          channel: 'METRICS' 
-        QM1:
-          channel: 'METRICS'
-        QM2:
-          channel: 'METRICS'
+  agent:
+    configuration_yaml: |
+      com.instana.plugin.ibmmq:
+        enabled: true
+        poll_rate: 10
+        support_ha: true
+        queueManagers:
+          SIQMSEBJAN: 
+            channel: 'METRICS' 
+          QM1:
+            channel: 'METRICS'
+          QM2:
+            channel: 'METRICS'
