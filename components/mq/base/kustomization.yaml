@@ -9,3 +9,13 @@ resources:
   - uniform-cluster-a/qm1
   - uniform-cluster-a/qm2
   - uniform-cluster-a/common-qm-config
+  - new-qm-1/
+  - new-qm-2/
+  - new-qm-3/
+  - new-qm-4/
+  - new-qm-5/
+  - new-qm-6/
+  - new-qm-7/
+  - new-qm-8/
+  - new-qm-9/
+  - new-qm-10/

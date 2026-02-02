@@ -1,0 +1,33 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: new-qm-6-external-tls
+spec:
+  secretTemplate:
+    annotations:
+      cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
+      cert-utils-operator.redhat-cop.io/generate-java-keystores: "true"
+  secretName: new-qm-6-external-tls-secret
+  duration: 2160h0m0s # 90d
+  renewBefore: 360h0m0s # 15d
+  subject:
+    organizations:
+      - mq
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  usages:
+    - key encipherment
+    - digital signature
+    - server auth
+    - client auth
+  dnsNames:
+    - new-qm-6-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com
+    - new-qm-6-ibm-mq-web-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com  
+
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer
+
+# Made with Bob

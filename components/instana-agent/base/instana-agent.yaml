@@ -20,3 +20,23 @@ spec:
             channel: 'METRICS'
           QM2:
             channel: 'METRICS'
+          NEWQM1:
+            channel: 'METRICS'
+          NEWQM2:
+            channel: 'METRICS'
+          NEWQM3:
+            channel: 'METRICS'
+          NEWQM4:
+            channel: 'METRICS'
+          NEWQM5:
+            channel: 'METRICS'
+          NEWQM6:
+            channel: 'METRICS'
+          NEWQM7:
+            channel: 'METRICS'
+          NEWQM8:
+            channel: 'METRICS'
+          NEWQM9:
+            channel: 'METRICS'
+          NEWQM10:
+            channel: 'METRICS'
