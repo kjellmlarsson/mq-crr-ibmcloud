@@ -23,8 +23,8 @@ spec:
     - server auth
     - client auth
   dnsNames:
-    - singleinstance-qm-ibm-mq-qm.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com
-    - singleinstance-qm-ibm-mq-web.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com  
+    - singleinstance-qm-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com
+    - singleinstance-qm-ibm-mq-web-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com  
 
   issuerRef:
     name: letsencrypt-cluster-issuer
