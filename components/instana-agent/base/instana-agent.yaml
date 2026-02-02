@@ -16,5 +16,5 @@ spec:
             channel: 'METRICS' 
           QM1:
             channel: 'METRICS'
-          QM2:
-            channel: 'METRICS'
+#          QM2:
+#            channel: 'METRICS'
