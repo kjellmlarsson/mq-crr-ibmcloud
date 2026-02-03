@@ -9,3 +9,5 @@ configMapGenerator:
   - name: instana-additional-backend-ca
     files:
     - ss-backend-cert.pem
+generatorOptions:
+  disableNameSuffixHash: true
