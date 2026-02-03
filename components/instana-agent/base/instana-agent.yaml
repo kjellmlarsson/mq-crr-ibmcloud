@@ -5,18 +5,18 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: ServerSideApply=true
 spec:
-  pod:
+  agent:
+    pod:
     labels: 
       app: instana-agent
-    # hostAliases:
-    # - ip: "161.156.209.138"
-    #   hostnames:
-    #     - "itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-    #     - "demo-instana.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-    #     - "agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-    #     - "otlp-http.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-    #     - "otlp-grpc.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-  agent:
+      hostAliases:
+      - ip: "161.156.209.138"
+        hostnames:
+          - "itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+          - "demo-instana.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+          - "agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+          - "otlp-http.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+          - "otlp-grpc.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
     configuration_yaml: |
       # Secrets
       com.instana.secrets:
