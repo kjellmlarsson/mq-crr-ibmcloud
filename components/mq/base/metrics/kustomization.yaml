@@ -9,4 +9,3 @@ resources:
   - empty-metrics-credentials.yaml
   - deployment.yaml
   - podmonitor.yaml
-  #- otel
