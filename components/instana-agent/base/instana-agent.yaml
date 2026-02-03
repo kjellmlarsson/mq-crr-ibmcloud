@@ -14,8 +14,6 @@ spec:
     additionalBackends:
       - endpointHost: itzvsi-t3ul3389.dte.demo.ibmcloud.com
         endpointPort: '443'
-        keysSecret: instana-agent-keys-dedicated
-   
     configuration_yaml: |
       # Secrets
       com.instana.secrets:
