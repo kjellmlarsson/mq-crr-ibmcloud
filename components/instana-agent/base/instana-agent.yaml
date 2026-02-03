@@ -26,7 +26,7 @@ spec:
     configuration_yaml: |
 
       com.instana.agent.main.sender.AdditionalBackend:
-        - host: itzvsi-t3ul3389.dte.demo.ibmcloud.com
+        - host: agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com
           port: 443
           protocol: HTTP/2
           tls:
