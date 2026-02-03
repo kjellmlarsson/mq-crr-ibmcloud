@@ -7,8 +7,6 @@ metadata:
 spec:
   agent:
     pod:
-    labels: 
-      app: instana-agent
       hostAliases:
       - ip: "161.156.209.138"
         hostnames:
