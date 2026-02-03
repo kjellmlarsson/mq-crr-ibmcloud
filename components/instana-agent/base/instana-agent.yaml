@@ -7,14 +7,19 @@ metadata:
 spec:
   agent:
     pod:
-      hostAliases:
-      - ip: "161.156.209.138"
-        hostnames:
-          - "itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-          - "demo-instana.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-          - "agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-          - "otlp-http.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
-          - "otlp-grpc.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+      labels:
+        app.kubernetes.io/name: instana-agent
+        app.kubernetes.io/instance: instana-agent
+        app.kubernetes.io/version: "237-0"
+        app.kubernetes.io/component: instana-agent
+      # hostAliases:
+      # - ip: "161.156.209.138"
+      #   hostnames:
+      #     - "itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+      #     - "demo-instana.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+      #     - "agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+      #     - "otlp-http.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
+      #     - "otlp-grpc.itzvsi-t3ul3389.dte.demo.ibmcloud.com"
     configuration_yaml: |
       # Secrets
       com.instana.secrets:
