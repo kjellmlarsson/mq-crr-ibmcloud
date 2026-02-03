@@ -1,0 +1,31 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: mq-external-tls-tueqm2
+spec:
+  secretTemplate:
+    annotations:
+      cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
+      cert-utils-operator.redhat-cop.io/generate-java-keystores: "true"
+  secretName: mq-external-tls-secret-tueqm2
+  duration: 2160h0m0s # 90d
+  renewBefore: 360h0m0s # 15d
+  subject:
+    organizations:
+      - mq
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  usages:
+    - key encipherment
+    - digital signature
+    - server auth
+    - client auth
+  dnsNames:
+    - tueqm2-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com
+    - tueqm2-ibm-mq-web-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com  
+
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer

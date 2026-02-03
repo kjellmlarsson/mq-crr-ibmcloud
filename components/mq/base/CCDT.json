@@ -20,6 +20,216 @@
           "cipherSpecification": "ANY_TLS12_OR_HIGHER"
         },
         "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL1",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm1-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM1"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL2",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm2-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM2"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL3",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm3-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM3"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL4",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm4-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM4"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL5",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm5-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM5"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL6",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm6-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM6"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL7",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm7-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM7"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL8",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm8-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM8"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL9",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm9-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM9"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "name": "TUECHL10",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "tueqm10-ibm-mq-qm-cp4i.apps.itz-jsmlpv.infra01-lb.lon04.techzone.ibm.com",
+              "port": 443
+            }
+          ],
+          "queueManager": "TUEQM10"
+        },
+        "connectionManagement":
+        {
+          "clientWeight": 1,
+          "affinity": "none"
+        },
+        "transmissionSecurity": {
+          "cipherSpecification": "ANY_TLS12_OR_HIGHER"
+        },
+        "type": "clientConnection"
       }
     ]
   }

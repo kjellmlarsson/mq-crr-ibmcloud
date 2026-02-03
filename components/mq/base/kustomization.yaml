@@ -8,3 +8,13 @@ resources:
   - uniform-cluster-a/qm1
   - uniform-cluster-a/qm2
   - uniform-cluster-a/common-qm-config
+  - tueqm1/
+  - tueqm2/
+  - tueqm3/
+  - tueqm4/
+  - tueqm5/
+  - tueqm6/
+  - tueqm7/
+  - tueqm8/
+  - tueqm9/
+  - tueqm10/

@@ -100,3 +100,23 @@ spec:
             channel: 'METRICS'
           QM2:
             channel: 'METRICS'
+          TUEQM1:
+            channel: 'METRICS'
+          TUEQM2:
+            channel: 'METRICS'
+          TUEQM3:
+            channel: 'METRICS'
+          TUEQM4:
+            channel: 'METRICS'
+          TUEQM5:
+            channel: 'METRICS'
+          TUEQM6:
+            channel: 'METRICS'
+          TUEQM7:
+            channel: 'METRICS'
+          TUEQM8:
+            channel: 'METRICS'
+          TUEQM9:
+            channel: 'METRICS'
+          TUEQM10:
+            channel: 'METRICS'
