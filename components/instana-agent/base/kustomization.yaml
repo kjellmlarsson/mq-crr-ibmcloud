@@ -9,4 +9,3 @@ configMapGenerator:
   - name: instana-additional-backend-ca
     files:
     - ss-backend-cert.pem
-    type: Opaque
