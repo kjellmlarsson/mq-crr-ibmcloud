@@ -6,7 +6,16 @@ spec:
   cluster:
     name: seb-jan-2026
   zone:
-    name: madrid 
+    name: madrid
+  pod:
+    volumeMounts:
+      - name: additional-backend-ca
+        mountPath: /opt/instana/agent/etc/additional-backend-certs
+        readOnly: true
+    volumes:
+      - name: additional-backend-ca
+        configMap:
+          name: instana-additional-backend-ca
   agent:
     endpointHost: ingress-orange-saas.instana.io
     endpointPort: '443'
@@ -15,6 +24,14 @@ spec:
       - endpointHost: itzvsi-t3ul3389.dte.demo.ibmcloud.com
         endpointPort: '443'
     configuration_yaml: |
+
+      com.instana.agent.main.sender.AdditionalBackend:
+        - host: itzvsi-t3ul3389.dte.demo.ibmcloud.com
+          port: 443
+          protocol: HTTP/2
+          tls:
+            ca-cert-path: /opt/instana/agent/etc/additional-backend-certs/ca.crt
+
       # Secrets
       com.instana.secrets:
         enabled: false
