@@ -3,14 +3,15 @@ kind: InstanaAgent
 metadata:
   name: instana-agent
 spec:
+  cluster:
+    name: seb-jan-2026
+  zone:
+    name: madrid 
   agent:
     endpointHost: ingress-orange-saas.instana.io
     endpointPort: '443'
     keysSecret: instana-agent-keys
-    cluster:
-      name: seb-jan-2026
-    zone:
-      name: madrid 
+   
     configuration_yaml: |
       # Secrets
       com.instana.secrets:
