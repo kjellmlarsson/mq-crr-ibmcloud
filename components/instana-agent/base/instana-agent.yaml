@@ -4,6 +4,8 @@ metadata:
   name: instana-agent
 spec:
   agent:
+    endpointHost: ingress-orange-saas.instana.io
+    endpointPort: '443'
     keysSecret: instana-agent-keys
     configuration_yaml: |
       # Secrets
