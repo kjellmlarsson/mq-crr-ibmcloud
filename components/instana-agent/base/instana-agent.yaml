@@ -42,7 +42,7 @@ spec:
 
       # Hardware & Zone
       com.instana.plugin.generic.hardware:
-        enabled: false
+        enabled: true
 
       # Apache Httpd
       com.instana.plugin.httpd:
