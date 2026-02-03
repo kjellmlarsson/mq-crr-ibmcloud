@@ -32,15 +32,3 @@ spec:
       syncPolicy:
         automated:
           selfHeal: true
-        syncOptions:
-          - ServerSideApply=true
-          - RespectIgnoreDifferences=true
-        ignoreDifferences:
-          - group: instana.io
-            kind: InstanaAgent
-            jsonPointers:
-            - /spec/agent/key
-            - /spec/agent/endpointHost
-            - /spec/agent/endpointPort
-            - /spec/cluster/name
-            - /spec/zone/name
