@@ -12,9 +12,9 @@ spec:
           - name: reloader
             namespace: cp4i
             sync-wave: "200"
-          - name: instana-agent
-            namespace: cp4i
-            sync-wave: "200"
+          #- name: instana-agent
+          #  namespace: cp4i
+          #  sync-wave: "200"
   template:
     metadata:
       name: '{{name}}'
