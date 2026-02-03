@@ -7,16 +7,16 @@ spec:
     name: seb-jan-2026
   zone:
     name: madrid
-  pod:
-    volumeMounts:
-      - name: additional-backend-ca
-        mountPath: /opt/instana/agent/etc/additional-backend-certs
-        readOnly: true
-    volumes:
-      - name: additional-backend-ca
-        configMap:
-          name: instana-additional-backend-ca
   agent:
+    pod:
+      volumeMounts:
+        - name: additional-backend-ca
+          mountPath: /opt/instana/agent/etc/additional-backend-certs
+          readOnly: true
+      volumes:
+        - name: additional-backend-ca
+          configMap:
+            name: instana-additional-backend-ca
     endpointHost: ingress-orange-saas.instana.io
     endpointPort: '443'
     keysSecret: instana-agent-keys
