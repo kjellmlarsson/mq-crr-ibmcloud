@@ -28,7 +28,7 @@ spec:
       
       com.instana.plugin.ibmmq:
         enabled: true
-        poll_rate: 5
+        poll_rate: 10
         support_ha: true
         queueManagers:
           SIQMSEBJAN:
