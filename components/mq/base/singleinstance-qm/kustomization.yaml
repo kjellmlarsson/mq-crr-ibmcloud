@@ -7,7 +7,7 @@ configMapGenerator:
   - name: singleinstance-qm-configmap
     files:
       - qm-config/tls.mqsc
-      - qm-config/monitoring.mqsc
+      #- qm-config/monitoring.mqsc
       - qm-config/mq.ini
 
 generatorOptions:

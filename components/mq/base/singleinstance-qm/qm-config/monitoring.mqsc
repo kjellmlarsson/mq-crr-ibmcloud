@@ -1,5 +1,3 @@
-* https://www.ibm.com/docs/en/instana-observability/1.0.312?topic=mq-configuring-additional-settings
-
 ALTER QMGR MONQ(LOW)
 ALTER QMGR PERFMEV(ENABLED) CHLEV(ENABLED)
 ALTER QMGR AUTHOREV(ENABLED) INHIBTEV(ENABLED) LOCALEV(ENABLED) REMOTEEV(ENABLED) STRSTPEV(ENABLED)
