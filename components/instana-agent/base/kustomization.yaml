@@ -6,7 +6,7 @@ resources:
   - daemonset.yaml
 
 configMapGenerator:
-  - name: instana-backend-ca
+  - name: instana-additional-backend-ca
     files:
     - ca.crt=ss-backend-cert.pem
 generatorOptions:
