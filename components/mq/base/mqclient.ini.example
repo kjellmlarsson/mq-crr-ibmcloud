@@ -1,0 +1,6 @@
+SSL:
+  OutboundSNI=HOSTNAME
+  SSLKeyRepository=./truststores/p12-truststore.p12
+CHANNELS:
+  ChannelDefinitionDirectory=./
+  ChannelDefinitionFile=CCDT.json
