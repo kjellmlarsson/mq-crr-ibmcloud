@@ -10,31 +10,25 @@ spec:
   agent:
     pod:
       volumeMounts:
-        - name: additional-backend-ca
-          mountPath: /opt/instana/agent/etc/additional-backend-certs
+        - name: backend-ca
+          mountPath: /opt/instana/agent/etc/backend-certs
           readOnly: true
       volumes:
-        - name: additional-backend-ca
+        - name: backend-ca
           configMap:
-            name: instana-additional-backend-ca
-    endpointHost: ingress-orange-saas.instana.io
+            name: instana-backend-ca
+    endpointHost: agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com
     endpointPort: '443'
     keysSecret: instana-agent-keys
-    additionalBackends:
-      - endpointHost: agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com
-        endpointPort: '443'
     configuration_yaml: |
 
-      com.instana.agent.main.sender.AdditionalBackend:
-        - host: agent-acceptor.itzvsi-t3ul3389.dte.demo.ibmcloud.com
-          port: 443
-          protocol: HTTP/2
-          tls:
-            ca-cert-path: /opt/instana/agent/etc/additional-backend-certs/ca.crt
+      com.instana.agent.main.sender.Backend:
+        tls:
+          ca-cert-path: /opt/instana/agent/etc/backend-certs/ca.crt
       
       com.instana.plugin.ibmmq:
         enabled: true
-        poll_rate: 10
+        poll_rate: 5
         support_ha: true
         queueManagers:
           SIQMSEBJAN:
