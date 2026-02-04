@@ -24,6 +24,7 @@ spec:
           name: singleinstance-qm-configmap
           items:
             - tls.mqsc
+            - monitoring.mqsc
     ini: 
       - configMap:    
           name: singleinstance-qm-configmap
