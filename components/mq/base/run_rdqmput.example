@@ -8,4 +8,4 @@ export PATH=$PATH:/Users/kjelllarsson/Projects/mq-rdqm/samples/C/macOS
 
 #rdqmput $*
 
-rdqmput -v 2 -b 20 -m 10 'NEWQM1' 'MQ.QUEUE'
+rdqmput -v 2 -b 20 -m 10 'NEWQM1' 'MQ.QUEUE1'
